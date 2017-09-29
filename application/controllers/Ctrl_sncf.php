@@ -19,7 +19,7 @@
      public function afficherAgents(){
          $numeroFormation=$_GET['numeroFormation'];
          $model=$this->load->model("Model_Agents");
-          $data['lesAgents'] = $this->Model_Agent->getAllAgents($numeroFormation);
+          $data['lesAgents'] = $this->Model_Agents->getAllAgents($numeroFormation);
           $this->load->view('v_agents',$data);
      }
  }

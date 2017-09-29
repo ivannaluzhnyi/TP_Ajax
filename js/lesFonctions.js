@@ -20,14 +20,14 @@ function AfficherFromation(numero){
 }
 
 
-function AfficherActions(codeFormation){
+function AfficherActions(numeroFormation){
     $.ajax
     (
       {
          type:'get',
          url:"index.php/Ctrl_sncf/afficherAgents",
-         data:"codeFormation="+codeFormation,
-        success:function(data)
+         data:"numeroFormation="+numeroFormation,
+         success:function(data)
                 {
                     $('#divAgents').empty();
                     $('#divAgents').append(data);
